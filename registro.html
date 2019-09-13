@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+	<meta charset="utf-8"/>
+	<title>Actividad 3.1 Registro</title>
+    </head>
+
+	<body>
+		<form method="post" action="http://miservidor.com/procesar.html">
+			<h2 id="Suegerencias">Registro de nuevo usuario</h2>
+			<p><label>Nombre del usuario:</label><input type="text" name="usuario" size="25"/></p>
+			<p><label>Contraseña:</label><input type="text" name="contrasena" size="25"/></p>
+			<p><label>Repetir contraseña:</label><input type="text" name="rcontrasena" size="25"/></p>
+			<p><label>Correo:</label><input type="email" name="correo" placeholder="correo@dominio.com" size="25"/></p>
+			<p><label>Repetir correo:</label><input type="email" name="rcorreo" placeholder="correo@dominio.com" size="25"/></p>
+			<p><label>Nombre:</label><input type="text" name="nombre" size="25"/></p>
+			<p><label>Apellidos:</label><input type="text" name="apellidos" size="25"/></p>
+			<p><label>Fecha de nacimiento:</label><input type="date" name="nacimiento"/></p>
+			<p><label>No soy un robot</label><input type="checkbox" name="robot" value="Sí"/>
+			</p>
+			<input type="reset" value="Borrar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+
+	</body>
+</html>

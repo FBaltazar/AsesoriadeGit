@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+	<meta charset="utf-8"/>
+	<title>Actividad 3.1 Sugerencias</title>
+    </head>
+
+	<body>
+		<form method="post" action="http://miservidor.com/procesar.html">
+			<h2 id="Suegerencias">Sugerir un sitio</h2>
+			<p><label>Nombre del visitante:</label><input type="text" name="nombre" size="25"/></p>
+			<p><label>Correo del visitante:</label><input type="email" name="correo" placeholder="correo@dominio.com" size="25"/></p>
+			<p><label>Dirección del sitio que sugiere:</label><input type="url" name="url" placeholder="http://www.nombredeldominio.com" size="25"/></p>
+			<p><label>Escribe una descripción del sitio que sugieres:</label><br/>
+				<textarea rows="7" cols="50">
+				</textarea>
+			</p>
+			<p><label>Qué calificación le darías al sitio que recomiendas?</label>
+				<select name="calificación">
+					<option selected>Exelente</option>
+					<option>Bueno</option>
+					<option>Regular</option>
+					<option>Malo</option>
+				</select>
+			</p>
+			<p><label>Categoría:</label>
+				<label>Videos</label><input type="radio" name="categoria" value="video"/>
+				<label>Imágenes</label><input type="radio" name="categoria" value="imagenes"/>
+				<label>Programación</label><input type="radio" name="categoria" value="programacion"/>
+			</p>
+			<p><label>El sitio sugerido es seguro</label><input type="checkbox" name="seguro" value="Sí"/>
+			</p>
+			<input type="reset" value="Borrar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+
+	</body>
+</html>
